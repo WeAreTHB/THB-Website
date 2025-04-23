@@ -1,0 +1,43 @@
+﻿@inherits LayoutComponentBase
+
+@* Required *@
+<MudThemeProvider/>
+<MudPopoverProvider/>
+
+@* Needed for dialogs *@
+<MudDialogProvider/>
+
+@* Needed for snackbars *@
+<MudSnackbarProvider/>
+@* <NavMenu /> *@
+@* <span class="top-image-class" style="top-background-image"></span> *@
+
+@* *@
+@* <MudAppBar Color="Color.Primary" Fixed="false"> *@
+@*     <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" /> *@
+@*     <MudSpacer /> *@
+@*     <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" /> *@
+@* </MudAppBar> *@
+
+@* <MudLayout> *@
+
+
+@* <MudPaper Height="400px" Width="50%"> *@
+    <MudContainer Fixed="true" Class="d-flex justify-center align-center mt-4">
+        <MudPaper Height="75px" Width="50%" Square="false" Class="d-flex mud-theme-primary align-center px-4 rounded-pill">
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Edge="Edge.Start" />
+            <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="rounded-pill" Style="padding: 0.5re" FullWidth="false">Test</MudButton>
+        </MudPaper>
+
+        @* <MudAppBar Class="mx-16"> *@
+        @*     <MudButton Color="Color.Secondary" Variant="Variant.Filled">Home</MudButton> *@
+        @*     <MudButton Color="Color.Inherit" Variant="Variant.Text">About Us</MudButton> *@
+        @* </MudAppBar> *@
+    </MudContainer>
+@* </MudPaper> *@
+
+
+@* <MudMainContent> *@
+@*     @Body *@
+@* </MudMainContent> *@
+@* </MudLayout> *@
