@@ -1,27 +1,11 @@
-<MudAppBar Elevation="0" Dense="false"> 
-    <div class="d-flex justify-space-between mx-auto pa-6 mud-theme-secondary" style="width: 100%">
-        <div>
-            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@(e => DrawerToggle())"/>
-        </div>
-        <div class="d-flex" justify-center>
-            <MudNavLink>Link 1</MudNavLink>
-            <MudNavLink>Link 2</MudNavLink>
-            <MudNavLink>Link 3</MudNavLink>
-        </div>
-        <div>
-            <MudMenu Icon="@Icons.Material.Filled.Person" Color="Color.Inherit" AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
-                <MudDivider/>
-                <MudMenuItem Link="/account/signout" ForceLoad="true"><MudIcon Icon="@Icons.Material.Filled.Logout" Size="Size.Small"/> Esci</MudMenuItem>
-            </MudMenu>
-        </div>
-    </div>
-</MudAppBar>
+<MudContainer Fixed="true" Class="d-flex justify-center align-center mt-4">
+    <MudPaper Height="60px" Width="50%" Square="false" Class="d-flex mud-theme-primary align-center px-4 rounded-pill">
+        <MudIconButton Icon="@CommonAssets.Images.THB_LOGO" Color="Color.Inherit" Edge="Edge.Start" Size="Size.Large"/>
+        <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="rounded-pill" Style="padding: 0.5rem" FullWidth="false">Test</MudButton>
+    </MudPaper>
 
-@code {
-    bool _drawerOpen = true;
-
-    void DrawerToggle()
-    {
-        _drawerOpen = !_drawerOpen;
-    }
-}
+    @* <MudAppBar Class="mx-16"> *@
+    @*     <MudButton Color="Color.Secondary" Variant="Variant.Filled">Home</MudButton> *@
+    @*     <MudButton Color="Color.Inherit" Variant="Variant.Text">About Us</MudButton> *@
+    @* </MudAppBar> *@
+</MudContainer>
