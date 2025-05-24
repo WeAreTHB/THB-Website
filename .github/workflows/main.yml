@@ -16,4 +16,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: Release/net8.0/publish/wwwroot # The folder the action should deploy.
+          folder: /home/runner/work/THB-Website/THB-Website/THBWebsite/bin/Release/net8.0/publish/ # The folder the action should deploy.
