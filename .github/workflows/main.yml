@@ -10,11 +10,8 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: dotnet restore
-
       - name: Build
-        run: dotnet publish Release
+        run: dotnet publish --configuration Release
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
