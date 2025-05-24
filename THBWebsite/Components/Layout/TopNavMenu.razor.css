@@ -1,0 +1,77 @@
+.top-nav-background {
+    background-color: white;
+    border-radius: calc(infinity * 1px);
+    height: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    width: 70%;
+}
+
+.top-nav-container
+{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    /*height: 100%;*/
+}
+
+.thb-logo-image-container
+{
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 16px;
+}
+
+.top-nav-item
+{
+    font-size: 1rem;
+    align-items: center;
+}
+
+.top-nav-item ::deep .top-nav-link {
+    color: black;
+    background: none;
+    border: none;
+    border-radius: calc(infinity * 1px);
+    display: flex;
+    height: 40px;
+    justify-content: start;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    line-height: 3rem;
+    width: 100%;
+    text-decoration: none;
+}
+
+.top-nav-item ::deep a.active {
+    background-color: #feb35b;
+    color: black;
+}
+
+@media screen and (max-width: 450px) {
+
+    .top-nav-background
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .top-nav-item ::deep .top-nav-link {
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
