@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "THB Website",
   "resources": {
-    "hash": "sha256-KkRdUohtP7jPW2+8QDs8V5aoX4Znzqc7Abgwozgbv9M=",
+    "hash": "sha256-dPIyyJJpFRsp36UdsXcA0TImj7u+xOpELcLxgQ8m3VM=",
     "jsModuleNative": {
       "dotnet.native.8.0.15.l5bze06whq.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -46,7 +46,7 @@
       "System.Text.Encodings.Web.wasm": "sha256-jNLtN4vF7WK8ULY8kgUgqIHfQsaO6gsbxvw9apgmjn4=",
       "System.Text.Json.wasm": "sha256-CcH/IucNv0+lJ7KWwBa0EhgzQfQgn/D8oL+Jh+WsUEU=",
       "System.Text.RegularExpressions.wasm": "sha256-HcZuePR4sy2OeN6Nt9pFlweGqXET8/4km86NaeWHBCs=",
-      "THB Website.wasm": "sha256-t3aOVI3pum0An9WMn+J6AKoGaE++WJz7Qm1MgKtvXjk="
+      "THB Website.wasm": "sha256-RPUzl3dWEKHecaPOSm7hMmlIc7QOZ6CF4RZhPoS0GR4="
     }
   },
   "cacheBootResources": true,
