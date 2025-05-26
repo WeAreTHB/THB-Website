@@ -13,7 +13,12 @@ jobs:
       - name: Build
         run: dotnet publish --configuration Release
 
+        # Add .nojekyll file to tell GitHub Pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+      - name: Add .nojekyll file
+        run: touch wwwroot/.nojekyll
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: "/home/runner/work/THB-Website/THB-Website/THBWebsite/bin/Release/net8.0/publish/" # The folder the action should deploy.
+          
